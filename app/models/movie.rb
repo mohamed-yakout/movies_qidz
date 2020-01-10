@@ -6,4 +6,6 @@ class Movie < ApplicationRecord
   has_many :locations, through: :movie_locations
 
   has_many :reviews, dependent: :destroy
+
+  validates :name, presence: true
 end

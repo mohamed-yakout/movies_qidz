@@ -27,8 +27,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :movie_id %>
-    <%= form.text_field :movie_id %>
+    <%= form.label :movie %>
+    <%= form.select :movie_id, options_for_select(Movie.all.collect { | movie | [movie.name, movie.id] }, @review.movie_id), {}, {} %>
   </div>
 
   <div class="actions">

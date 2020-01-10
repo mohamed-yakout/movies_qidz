@@ -20,5 +20,51 @@
   <%= @movie.director %>
 </p>
 
+<br>
+
+<h1>Actors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movie.actors.each do |actor| %>
+      <tr>
+        <td><%= actor.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+<h1>Reviews</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User Name</th>
+      <th>Stars</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movie.reviews.each do |review| %>
+      <tr>
+        <td><%= review.user_name %></td>
+        <td><%= review.stars %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
