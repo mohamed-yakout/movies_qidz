@@ -11,17 +11,17 @@ Things you may want to cover:
 
 * Configuration:
 
-- bundle install
+  - bundle install
 
 * Database creation
 
-- rake db:migrate
+  - rake db:migrate
 
 * Database initialization
 
-- Import movies.csv by running `rake importer:import_movies`
-- Import reviews.csv by running `rake importer:import_reviews`
-- Notice: You should run the above tasks in the same order.
+  - Import movies.csv by running `rake importer:import_movies`
+  - Import reviews.csv by running `rake importer:import_reviews`
+  - Notice: You should run the above tasks in the same order.
 
 * go to all movies by route `/movies`
 
