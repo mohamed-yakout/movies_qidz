@@ -5,20 +5,24 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.6.3
 
-* System dependencies
+* System dependencies: PostgreSQL
 
-* Configuration
+* Configuration:
+
+- bundle install
 
 * Database creation
 
+- rake db:migrate
+
 * Database initialization
 
-* How to run the test suite
+- Import movies.csv by running `rake importer:import_movies`
+- Import reviews.csv by running `rake importer:import_reviews`
+- Notice: You should run the above tasks in the same order.
 
-* Services (job queues, cache servers, search engines, etc.)
+* go to all movies by route `/movies`
 
-* Deployment instructions
-
-* ...
+* go to all actors by route `/actors`, actors page has search by name.
