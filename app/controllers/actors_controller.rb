@@ -4,7 +4,8 @@ class ActorsController < ApplicationController
   # GET /actors
   # GET /actors.json
   def index
-    @actors = Actor.all
+    @q = Actor.ransack(params[:q])
+    @actors = @q.result
   end
 
   # GET /actors/1

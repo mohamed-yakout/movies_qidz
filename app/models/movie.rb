@@ -4,4 +4,6 @@ class Movie < ApplicationRecord
 
   has_many :movie_locations, dependent: :destroy
   has_many :locations, through: :movie_locations
+
+  has_many :reviews, dependent: :destroy
 end
