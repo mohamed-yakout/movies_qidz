@@ -1,0 +1,3 @@
+rails g scaffold Actor name:string
+rails g scaffold Movie name:string description:text year:integer director:string city:string country:string
+rails g scaffold MovieActor movie:references actor:references
