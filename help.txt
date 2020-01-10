@@ -3,3 +3,4 @@ rails g scaffold Movie name:string description:text year:integer director:string
 rails g scaffold MovieActor movie:references actor:references
 rails g model Location city:string country:string
 rails g model MovieLocation movie:references location:references
+rails g migration RemoveCityCountryFromMovie
